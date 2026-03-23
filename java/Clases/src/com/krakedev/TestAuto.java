@@ -7,24 +7,24 @@ public class TestAuto {
 		Auto auto2 = new Auto(); //2. Declarar e Instanciar un objeto Auto, referenciarlo con auto2
 		
 		//3.Modificar los atributos auto1
-		auto1.marca = "Mitsubishi";
-		auto1.anio = 2006;
-		auto1.precio = 20000;
+		auto1.setMarca ("Mitsubishi");
+		auto1.setAnio (2006);
+		auto1.setPrecio (20000);
 			
 		//4. Accedo a los atributos autos1
-		System.out.println("Marca: " + auto1.marca);
-		System.out.println("Año: " + auto1.anio);
-		System.out.println("Precio: $" + auto1.precio);
+		System.out.println("Marca: " + auto1.getMarca());
+		System.out.println("Año: " + auto1.getAnio());
+		System.out.println("Precio: $" + auto1.getPrecio());
 		
 		//5.Modificar los atributos auto1
-		auto2.marca = "Lamborghini";
-		auto2.anio = 2022;
-		auto2.precio = 360000;
+		auto2.setMarca ("Lamborghini");
+		auto2.setAnio (2022);
+		auto2.setPrecio (360000);
 		
 		System.out.println("====================");
 		//6. Accedo a los atributos autos1
-			System.out.println("Marca: " + auto2.marca);
-			System.out.println("Año: " + auto2.anio);
-			System.out.println("Precio: $" + auto2.precio);
+			System.out.println("Marca: " + auto2.getMarca());
+			System.out.println("Año: " + auto2.getAnio());
+			System.out.println("Precio: $" + auto2.getPrecio());
 	}
 }

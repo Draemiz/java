@@ -2,29 +2,28 @@ package com.krakedev;
 
 public class TestCalculadora {
 
-	public static void main(String[] args) {
-		Calculadora calcu;
-		int resultadoSuma;
-		double resultadoRestar;
-		double resultadoMultiplicar;
-		double resultadoDividir;
-		double resultadoPromedio;
-		
-		calcu = new Calculadora();
-		resultadoSuma = calcu.sumar(5,3);
-		resultadoRestar = calcu.restar(10,3);
-		resultadoMultiplicar = calcu.multiplicar(10,5);
-		resultadoDividir = calcu.dividir(10,2);
-		resultadoPromedio = calcu.promediar(10,8,9);
-		
-		System.out.println("RESULTADO SUMA: " +resultadoSuma);
-		System.out.println("RESULTADO RESTA: " +resultadoRestar);
-		System.out.println("RESULTADO MULTIPLICAR: " + resultadoMultiplicar);
-		System.out.println("RESULTADO DIVIDIR: " + resultadoDividir);
-		System.out.println("RESULTADO PROMEDIO: " + resultadoPromedio);
+    public static void main(String[] args) {
 
-		calcu.mostrarResultado();
-		
-	}
+        Calculadora calcu = new Calculadora();
 
+        calcu.sumar(5, 3);
+        System.out.println("SUMA: " + calcu.getResultado());
+
+        calcu.restar(10, 3);
+        System.out.println("RESTA: " + calcu.getResultado());
+
+        calcu.multiplicar(10, 5);
+        System.out.println("MULTIPLICAR: " + calcu.getResultado());
+
+        calcu.dividir(10, 2);
+        System.out.println("DIVIDIR: " + calcu.getResultado());
+
+        calcu.promediar(10, 8, 9);
+        System.out.println("PROMEDIO: " + calcu.getResultado());
+
+        calcu.setResultado(100);
+        System.out.println("Resultado cambiado manualmente: " + calcu.getResultado());
+
+        calcu.mostrarResultado();
+    }
 }
