@@ -4,11 +4,12 @@ public class TestPersona {
 
 	public static void main(String[] args) {
 		Persona p; // 1. Declaro una variable llamada p de tipo persona
-		Persona p2 = new Persona();
+		
+		Persona p2 = new Persona("Sin nombre"); // antes: new Persona()
 		Persona p3 = new Persona("Pablo");
 		Persona p4 = new Persona("Rocio",43,1.60);
 		
-		p = new Persona(); //Instanciar o crear un objeto persona, referenciarlo con p
+		p = new Persona("Temporal",0,0); // antes: new Persona()
 		
 		System.out.println("nombre: " + p4.getNombre());
 		System.out.println("edad: " + p4.getEdad());
@@ -32,6 +33,7 @@ public class TestPersona {
 		
 		//6.Modificar los atributos de p2
 		p2.setNombre ("Angelina");
+		
 		// 6. Accedo a los atributos de p2
 		System.out.println("*********");
 		System.out.println("p.nombre: " + p.getNombre());
