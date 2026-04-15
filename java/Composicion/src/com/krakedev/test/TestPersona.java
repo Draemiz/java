@@ -21,6 +21,10 @@ public class TestPersona {
 		
 		System.out.println("nombre: " + nombre);
 		System.out.println(d1.getCallePrincipal());
+		
+		p1.imprimir();
+		System.out.println("fin");
 	}
 
+	
 }
